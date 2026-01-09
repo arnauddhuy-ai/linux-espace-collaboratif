@@ -25,9 +25,9 @@
 
 ### 0.4 État initial requis
 
-- ✅ Linux installé avec accès root ou sudo
-- ✅ Connexion réseau fonctionnelle (pour apt/dnf)
-- ✅ Accès SSH configuré (recommandé)
+- Linux installé avec accès root ou sudo
+- Connexion réseau fonctionnelle (pour apt/dnf)
+- Accès SSH configuré (recommandé)
 
 ### 0.5 Durée estimée
 
