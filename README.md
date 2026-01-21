@@ -109,8 +109,11 @@ sudo usermod -aG testweb lea
 grep 'devweb' /etc/group
 grep 'testweb' /etc/group
 ```
-**Capture :**
+Capture :
 
+![Test 1](./01.%20Vérification%20des%20groupes.png)
+
+Vérification de la création des groupes devweb et testweb et de l'affectation des utilisateurs.
 
 
 Vérification de la création des groupes devweb et testweb et de l'affectation des utilisateurs.
