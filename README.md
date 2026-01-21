@@ -111,7 +111,7 @@ grep 'testweb' /etc/group
 ```
 **Capture :**
 
-[Test 1](01.%20Test%20de%20connectivité%20locale%20et%20inter-VLAN%20depuis%20le%20Site%20A.png)
+
 
 Vérification de la création des groupes devweb et testweb et de l'affectation des utilisateurs.
 
