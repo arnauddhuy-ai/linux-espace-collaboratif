@@ -286,7 +286,7 @@ Vérification de l'attribution automatique du groupe propriétaire devweb lors d
 ### Résultat attendu :
 
 ```
--rw-rw-r-- 1 julien devweb 32 Jan  9 10:15 index.html
+-rw-rw----+ 1 julien devweb 33 Jan  20 16:17 index.html
 ```
 
 > Le groupe doit être `devweb` grâce au bit SGID
@@ -350,7 +350,7 @@ Test de sécurité réussi : l'accès au répertoire DevApp est refusé à l'uti
 ### Résultat attendu :
 
 ```
-bash: cd: /srv/ProjetWeb/DevApp: Permission denied
+-sh: l: cd: can't cd to /srv/ProjetWeb/DevApp
 ```
 
 > Amine **ne doit pas** pouvoir accéder au dossier `DevApp`, car il n'est pas membre du groupe devweb
