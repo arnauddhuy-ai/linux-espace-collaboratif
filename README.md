@@ -205,7 +205,7 @@ getfacl /srv/ProjetWeb/TestApp
 ```
 **Capture :**
 
-![Test 3](./03.%20Vérification%20des%20ACL%20sur%20DevApp.png)
+![Test 2](./02.%20Vérification%20des%20ACL%20sur%20DevApp.png)
 
 Affichage détaillé des droits d'accès et des règles d'héritage par défaut pour le répertoire DevApp.
 
@@ -226,7 +226,7 @@ default:mask::rwx
 default:other::---
 ```
 
-![Test 4](./04.%20Vérification%20des%20ACL%20sur%20TestApp.png)
+![Test 3](./03.%20Vérification%20des%20ACL%20sur%20TestApp.png)
 
 Affichage détaillé des droits d'accès et des règles d'héritage par défaut pour le répertoire TestApp.
 
@@ -251,7 +251,7 @@ ls -ld /srv/ProjetWeb/*
 ```
 **Capture :**
 
-![Test 2](./02.%20Vérification%20des%20permissions%20et%20SGID%20des%20dossiers.png)
+![Test 4](./04.%20Vérification%20des%20permissions%20et%20SGID%20des%20dossiers.png)
 
 Confirmation de l'activation du bit SGID (s) et de la présence des ACL (+) sur les répertoires partagés.
 
