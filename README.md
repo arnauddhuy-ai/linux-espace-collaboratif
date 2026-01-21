@@ -258,8 +258,8 @@ Confirmation de l'activation du bit SGID (s) et de la présence des ACL (+) sur 
 ### Résultat attendu :
 
 ```
-drwxrws---+ 2 root devweb  4096 Jan  9 10:00 /srv/ProjetWeb/DevApp
-drwxrws---+ 2 root testweb 4096 Jan  9 10:00 /srv/ProjetWeb/TestApp
+drwxrws---+ 2 root devweb  4096 20 Janv. 15:42 /srv/ProjetWeb/DevApp
+drwxrws---  2 root testweb 4096 20 Janv. 15:53 /srv/ProjetWeb/TestApp
 ```
 
 ---
@@ -286,7 +286,7 @@ Vérification de l'attribution automatique du groupe propriétaire devweb lors d
 ### Résultat attendu :
 
 ```
--rw-rw----+ 1 julien devweb 33 Jan  20 16:17 index.html
+-rw-rw----+ 1 julien devweb 33 Janv. 20 16:17 index.html
 ```
 
 > Le groupe doit être `devweb` grâce au bit SGID
