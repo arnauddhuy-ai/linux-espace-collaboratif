@@ -277,6 +277,11 @@ touch index.html
 echo "<h1>Page créée par Julien</h1>" > index.html
 ls -l
 ```
+**Capture :**
+
+![Test 5](./05.%20Test%20collaboration%20dans%20DevApp%20(Julien%20crée%20un%20fichier).png)
+
+Vérification de l'attribution automatique du groupe propriétaire devweb lors de la création d'un fichier par Julien.
 
 ### Résultat attendu :
 
@@ -298,6 +303,11 @@ cd /srv/ProjetWeb/DevApp
 echo "<p>Ajout par Marie</p>" >> index.html
 cat index.html
 ```
+**Capture :**
+
+![Test 6](./06.%20Test%20collaboration%20dans%20DevApp%20(Marie%20modifie%20le%20fichier).png)
+
+Validation du travail collaboratif : Marie parvient à modifier le fichier créé par Julien grâce aux permissions de groupe.
 
 ### Résultat attendu :
 
@@ -331,6 +341,11 @@ su - amine
 cd /srv/ProjetWeb/DevApp
 ls
 ```
+**Capture :**
+
+![Test 7](./07.%20Test%20isolation%20entre%20groupes%20(Amine%20tente%20d’accéder%20à%20DevApp).png)
+
+Test de sécurité réussi : l'accès au répertoire DevApp est refusé à l'utilisateur Amine (membre de TestApp).
 
 ### Résultat attendu :
 
@@ -391,6 +406,12 @@ echo "Validation par Léa" >> test_amine.txt
 cat test_amine.txt
 exit
 ```
+
+**Capture :**
+
+![Test 8](./08.%20Test%20collaboration%20dans%20TestApp%20(Amine%20et%20Léa).png)
+
+Confirmation finale de la collaboration fluide entre Amine et Léa dans leur espace partagé dédié.
 
 ### Résultat attendu :
 
