@@ -118,8 +118,8 @@ Vérification de la création des groupes devweb et testweb et de l'affectation 
 ### Résultat attendu :
 
 ```
-devweb:x:1001:julien,marie
-testweb:x:1002:amine,lea
+devweb:x:1005:julien,marie
+testweb:x:1006:amine,lea
 ```
 
 > Permet de s'assurer que les utilisateurs sont bien rattachés à leurs groupes.
@@ -209,10 +209,6 @@ getfacl /srv/ProjetWeb/TestApp
 
 Affichage détaillé des droits d'accès et des règles d'héritage par défaut pour le répertoire DevApp.
 
-![Test 4](./04.%20Vérification%20des%20ACL%20sur%20TestApp.png)
-
-Affichage détaillé des droits d'accès et des règles d'héritage par défaut pour le répertoire TestApp.
-
 ### Résultat attendu :
 
 ```
@@ -222,15 +218,16 @@ Affichage détaillé des droits d'accès et des règles d'héritage par défaut 
 # flags: -s-
 user::rwx
 group::rwx
-group:devweb:rwx
-mask::rwx
 other::---
 default:user::rwx
 default:group::rwx
-default:group:devweb:rwx
 default:mask::rwx
 default:other::---
 ```
+
+![Test 4](./04.%20Vérification%20des%20ACL%20sur%20TestApp.png)
+
+Affichage détaillé des droits d'accès et des règles d'héritage par défaut pour le répertoire TestApp.
 
 ### 6.4 Vérification supplémentaire
 
