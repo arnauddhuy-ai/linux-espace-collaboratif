@@ -109,15 +109,11 @@ sudo usermod -aG testweb lea
 grep 'devweb' /etc/group
 grep 'testweb' /etc/group
 ```
-Capture :
+**Capture :**
 
 ![Test 1](./01.%20Vérification%20des%20groupes.png)
 
 Vérification de la création des groupes devweb et testweb et de l'affectation des utilisateurs.
-
-
-Vérification de la création des groupes devweb et testweb et de l'affectation des utilisateurs.
-
 
 ### Résultat attendu :
 
@@ -207,6 +203,15 @@ sudo setfacl -R -m d:m::rwx /srv/ProjetWeb/TestApp
 getfacl /srv/ProjetWeb/DevApp
 getfacl /srv/ProjetWeb/TestApp
 ```
+**Capture :**
+
+![Test 3](./03.%20Vérification%20des%20ACL%20sur%20DevApp.png)
+
+Affichage détaillé des droits d'accès et des règles d'héritage par défaut pour le répertoire DevApp.
+
+![Test 4](./04.%20Vérification%20des%20ACL%20sur%20TestApp.png)
+
+Affichage détaillé des droits d'accès et des règles d'héritage par défaut pour le répertoire TestApp.
 
 ### Résultat attendu :
 
@@ -240,8 +245,11 @@ drwxrws---+ 2 root devweb  4096 Jan  9 10:00 /srv/ProjetWeb/DevApp
 drwxrws---+ 2 root testweb 4096 Jan  9 10:00 /srv/ProjetWeb/TestApp
 ```
 
-> Le `+` à la fin des permissions indique la présence d'ACL
-> Le `s` dans `rws` indique le bit SGID actif
+**Capture :**
+
+![Test 2](./02.%20Vérification%20des%20permissions%20et%20SGID%20des%20dossiers.png)
+
+Confirmation de l'activation du bit SGID (s) et de la présence des ACL (+) sur les répertoires partagés.
 
 ---
 
