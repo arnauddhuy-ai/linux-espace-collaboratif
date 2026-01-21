@@ -212,6 +212,7 @@ Affichage détaillé des droits d'accès et des règles d'héritage par défaut 
 ### Résultat attendu :
 
 ```
+getfacl : suppression du premier << /  >> des noms de chemins absolus
 # file: srv/ProjetWeb/DevApp
 # owner: root
 # group: devweb
@@ -228,6 +229,20 @@ default:other::---
 ![Test 4](./04.%20Vérification%20des%20ACL%20sur%20TestApp.png)
 
 Affichage détaillé des droits d'accès et des règles d'héritage par défaut pour le répertoire TestApp.
+
+### Résultat attendu :
+
+```
+getfacl : suppression du premier << /  >> des noms de chemins absolus
+# file: srv/ProjetWeb/testApp
+# owner: root
+# group: testweb
+# flags: -s-
+user::rwx
+group::rwx
+other::---
+
+```
 
 ### 6.4 Vérification supplémentaire
 
