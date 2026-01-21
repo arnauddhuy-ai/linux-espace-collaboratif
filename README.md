@@ -249,6 +249,11 @@ other::---
 ```bash
 ls -ld /srv/ProjetWeb/*
 ```
+**Capture :**
+
+![Test 2](./02.%20Vérification%20des%20permissions%20et%20SGID%20des%20dossiers.png)
+
+Confirmation de l'activation du bit SGID (s) et de la présence des ACL (+) sur les répertoires partagés.
 
 ### Résultat attendu :
 
@@ -256,12 +261,6 @@ ls -ld /srv/ProjetWeb/*
 drwxrws---+ 2 root devweb  4096 Jan  9 10:00 /srv/ProjetWeb/DevApp
 drwxrws---+ 2 root testweb 4096 Jan  9 10:00 /srv/ProjetWeb/TestApp
 ```
-
-**Capture :**
-
-![Test 2](./02.%20Vérification%20des%20permissions%20et%20SGID%20des%20dossiers.png)
-
-Confirmation de l'activation du bit SGID (s) et de la présence des ACL (+) sur les répertoires partagés.
 
 ---
 
